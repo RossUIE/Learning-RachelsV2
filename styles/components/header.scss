@@ -7,7 +7,8 @@
     position: fixed;
     background: transparent;
     z-index: 9999999;
-    color: $white;   
+    color: $white; 
+    transition: all 0.3s ease;
     
 
     &.scrolled {
@@ -42,6 +43,12 @@
 
     @media only screen and (max-width: 659px) {
         padding: rem(20 30);
+        background-color: $white;
+        color: $bodyText;
+
+        svg {
+            fill: $bodyText;
+        }
     }
 
     &_links {

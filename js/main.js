@@ -107,15 +107,21 @@ const formValidation = (event) => {
 
 const navScroll = () => {
     var navbar = document.querySelector('nav')
+    var nodes  = document.querySelector('.burger').getElementsByTagName("div");
 
     window.onscroll = function() {
 
-    // pageYOffset or scrollY
-    if (window.pageYOffset > 0) {
-        navbar.classList.add('scrolled')
-    } else {
-        navbar.classList.remove('scrolled')
-    }
+        // pageYOffset or scrollY
+        if (window.pageYOffset > 0) {
+            navbar.classList.add('scrolled');
+            // burger.style.fill = "#707070"
+            for(var i=0; i<nodes.length; i++) {
+                nodes[i].style.background = "#707070";
+            }
+            
+        } else {
+            navbar.classList.remove('scrolled')
+        }
     }
 }
 

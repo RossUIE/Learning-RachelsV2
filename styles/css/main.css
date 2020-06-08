@@ -95,7 +95,8 @@ textarea {
   position: fixed;
   background: transparent;
   z-index: 9999999;
-  color: #fff; }
+  color: #fff;
+  transition: all 0.3s ease; }
   .c-header.scrolled {
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.0980392157);
     background: #fff;
@@ -117,7 +118,11 @@ textarea {
         cursor: pointer; } }
   @media only screen and (max-width: 659px) {
     .c-header {
-      padding: 1.25rem 1.875rem; } }
+      padding: 1.25rem 1.875rem;
+      background-color: #fff;
+      color: #707070; }
+      .c-header svg {
+        fill: #707070; } }
   .c-header_links {
     display: flex;
     justify-content: center; }
@@ -271,7 +276,7 @@ textarea {
     @media only screen and (max-width: 659px) {
       .c-about-info {
         width: 100%;
-        padding: 1.25rem; } }
+        padding: 3.125rem 1.25rem; } }
 
 .c-packages {
   display: flex;
@@ -406,7 +411,7 @@ textarea {
     margin: 0 auto; }
     .c-contact-content .contact-item {
       display: flex;
-      justify-content: center;
+      align-items: center;
       padding: 1.25rem;
       margin: 1.25rem;
       flex-grow: 1;
@@ -530,16 +535,16 @@ footer {
       display: flex;
       list-style: none;
       padding: 0; }
-      @media only screen and (max-width: 478px) {
+      @media only screen and (max-width: 650px) {
         footer .c-footer_links ul {
           flex-direction: column;
           align-items: center; } }
       footer .c-footer_links ul li {
         padding: 0 0.9375rem;
         color: #fff; }
-        @media only screen and (max-width: 478px) {
+        @media only screen and (max-width: 650px) {
           footer .c-footer_links ul li {
-            padding: 1.25rem 0.9375rem; } }
+            padding: 0.9375rem 0.9375rem; } }
         footer .c-footer_links ul li:hover {
           color: #F5B900; }
   footer .c-footer_social {
