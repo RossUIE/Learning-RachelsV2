@@ -10,7 +10,8 @@
         min-height: rem(500);
         background-image: url('../../assets/about.jpg');
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
+        background-position: center;
         width: 50%;
         position: relative;
         @media only screen and (max-width: 659px) {
