@@ -93,9 +93,18 @@ textarea {
   padding: 1.25rem 4.375rem;
   width: 100%;
   position: fixed;
-  background: #fff;
+  background: transparent;
   z-index: 9999999;
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.0980392157); }
+  color: #fff; }
+  .c-header.scrolled {
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.0980392157);
+    background: #fff;
+    transition: all 0.3s ease;
+    color: #707070; }
+    .c-header.scrolled li {
+      color: #707070; }
+    .c-header.scrolled svg {
+      fill: #707070; }
   .c-header .nav-link:hover {
     color: #F5B900;
     cursor: pointer; }
@@ -116,7 +125,8 @@ textarea {
       display: flex;
       list-style: none; }
       .c-header_links ul li {
-        padding: 0 0.9375rem; }
+        padding: 0 0.9375rem;
+        color: #fff; }
     @media only screen and (max-width: 659px) {
       .c-header_links {
         position: absolute;
@@ -149,7 +159,7 @@ textarea {
     .c-header_social svg {
       width: 1.5625rem;
       margin-left: 0.625rem;
-      fill: #707070; }
+      fill: #fff; }
     .c-header_social svg:hover {
       fill: #F5B900; }
     @media only screen and (max-width: 659px) {
@@ -190,7 +200,7 @@ textarea {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 43.75rem;
+  min-height: 50rem;
   background-image: url("../../assets/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
