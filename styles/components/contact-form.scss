@@ -23,6 +23,18 @@
                 padding: rem(15 15 25 15);
                 border: 1px solid $border-color;
 
+                &.nameFormfield {
+                    border-radius: rem(8 0 0 0 );
+                }
+
+                &.messageFormfield {
+                    border-radius: rem(0 8 8 0 );
+                }
+
+                &.phoneFormfield {
+                    border-radius: rem(0 0 0 8 );
+                }
+
             }
             .c-personal {
                 width: 50%;
@@ -37,6 +49,7 @@
                 flex: 1;
                 flex-grow: 1;
                 flex-basis: 300px;
+                border-radius: rem(0 8 8 0);
     
                 .form-field {
                     flex: 1;
@@ -62,11 +75,15 @@
             background-color: $success-green;
             border: 1px solid $DarkGreen;
             padding: rem(20);
+            max-width: rem(1300);
+            width: 100%;
             border-radius: rem(8);
             display: flex;
             align-items: center;
+            margin: auto;
             margin-bottom: rem(30);
             display: none;
+           
             svg {
                 max-width: rem(25);
                 width: 100%;

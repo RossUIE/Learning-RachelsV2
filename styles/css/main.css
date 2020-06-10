@@ -641,7 +641,6 @@ ul {
     .c-contact-content .contact-item {
       display: flex;
       align-items: center;
-      padding: 1.25rem;
       margin: 1.25rem;
       flex-grow: 1;
       flex-basis: 200px;
@@ -701,6 +700,12 @@ ul {
         flex-direction: column;
         padding: 0.9375rem 0.9375rem 1.5625rem 0.9375rem;
         border: 1px solid #E2E6E7; }
+        .c-contact-form .contact-form_content .form-field.nameFormfield {
+          border-radius: 0.5rem 0 0 0; }
+        .c-contact-form .contact-form_content .form-field.messageFormfield {
+          border-radius: 0 0.5rem 0.5rem 0; }
+        .c-contact-form .contact-form_content .form-field.phoneFormfield {
+          border-radius: 0 0 0 0.5rem; }
       .c-contact-form .contact-form_content .c-personal {
         width: 50%;
         flex-grow: 1;
@@ -711,7 +716,8 @@ ul {
         position: relative;
         flex: 1;
         flex-grow: 1;
-        flex-basis: 300px; }
+        flex-basis: 300px;
+        border-radius: 0 0.5rem 0.5rem 0; }
         .c-contact-form .contact-form_content .c-message .form-field {
           flex: 1; }
     .c-contact-form .contact-form_handler {
@@ -728,9 +734,12 @@ ul {
       background-color: #dbf0d9;
       border: 1px solid #0D8547;
       padding: 1.25rem;
+      max-width: 81.25rem;
+      width: 100%;
       border-radius: 0.5rem;
       display: flex;
       align-items: center;
+      margin: auto;
       margin-bottom: 1.875rem;
       display: none; }
       .c-contact-form .contact-form .form-success-message svg {
@@ -769,6 +778,9 @@ footer {
         footer .c-footer_links ul {
           flex-direction: column;
           align-items: center; } }
+      @media only screen and (max-width: 755px) {
+        footer .c-footer_links ul {
+          margin: 1.25rem 0; } }
       footer .c-footer_links ul li {
         padding: 0 0.9375rem;
         color: #fff; }
@@ -784,7 +796,6 @@ footer {
     flex-grow: 1; }
     footer .c-footer_social svg {
       width: 1.5625rem;
-      margin-left: 0.625rem;
       fill: #fff; }
     footer .c-footer_social svg:hover {
       fill: #DF8B0D; }

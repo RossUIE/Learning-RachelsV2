@@ -90,9 +90,11 @@ const handleMap = () => {
 const formValidation = (event) => {
 	event.preventDefault();
 	// inputs
+	const form = document.getElementById('contact-form');
 	const name = document.getElementById('name').value;
 	const email = document.getElementById('email').value;
 	const message = document.getElementById('message').value;
+	const phone = document.getElementById('phone').value;
 
 	// formFieldBoxes
 	const nameFormField = document.querySelector('.nameFormfield');
@@ -129,10 +131,27 @@ const formValidation = (event) => {
 
 
 	if(emailValid && nameValid && messageValid) {
-		successMessage.style.display = "flex";
-		setTimeout(function(){ 
-			successMessage.style.display = "none";
-		}, 10000);
+		$.ajax({
+			url: "https://formspree.io/xbjzygvl",
+			method: "POST",
+			data: {
+				Name: `${name}`,
+				Email: `${email}`,
+				Phone: `${phone}`,
+				Message: `${message}`
+			},
+			dataType: "json",
+			success: function (data, status, xhr) {// success callback function
+				successMessage.style.display = "flex";
+				setTimeout(function(){ 
+					successMessage.style.display = "none";
+				}, 10000);
+				form.reset();
+			},
+			error: function (error) {
+				alert('There was an error trying to send your email.');
+			}
+		  });
 		return true
 	} else {
 		return false
