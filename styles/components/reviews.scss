@@ -1,0 +1,95 @@
+/*start of reviews*/
+.testimonial {
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    border-top: 1px solid #E6ECF8;
+    min-height: 700px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.reviewContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: rem(20);
+}
+
+.testimonial h1 {
+    margin-top: 50px;
+}
+
+.snip {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    color: #9e9e9e;
+    margin: 35px 7px 10px;
+    min-height: 370px;
+    max-width: 310px;
+    min-width: 250px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-top: 5px solid #DF8B0D;
+  }
+  
+  .snip *,
+  .snip *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+  }
+  
+  .snip figcaption {
+    padding: 13% 10% 12%;
+  }
+  
+  .snip figcaption:before {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        color: #DF8B0D;
+        content: "\f10e";
+        font-family: 'FontAwesome';
+        font-size: 1.5rem;
+        font-style: normal;
+        left: 50%;
+        line-height: 60px;
+        position: absolute;
+        top: -30px;
+        width: 60px;
+  }
+  
+  .snip h3 {
+        color: #9e9e9e;
+        font-weight: bold;
+        line-height: 24px;
+        margin: 10px 0 5px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 20px;
+  }
+  
+  .snip h4 {
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.5;
+  }
+  
+  .snip blockquote {
+    font-style: italic;
+    font-weight: 300;
+    margin: 0 0 20px;
+  }
+
+/*End of reviews*/

@@ -1,0 +1,109 @@
+.c-welcome {
+    max-width: rem(1200);
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 60px;
+    margin: auto;
+
+    &-title {
+        margin-bottom: rem(50);
+        padding: rem(0 20 20 20);
+
+        @media only screen and (max-width: 800px) {
+           text-align: justify;
+
+           h2 {
+               text-align: center;
+           }
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: rem(1200);
+        margin: auto;
+        word-wrap: break-word;
+        padding-bottom: 100px;
+        color: #888899;
+
+        h3 {
+            margin-bottom: rem(10);
+        }
+
+        .philosiphy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 200px;
+            width: 100%;
+            flex-wrap: wrap;
+
+            &-row {
+                display: flex;
+                flex-direction: row;
+                @media only screen and (max-width: 800px) {
+                    flex-direction: column;
+                }
+            }
+
+            .reverse {
+                flex-direction: row-reverse;
+                @media only screen and (max-width: 800px) {
+                    flex-direction: column;
+                }
+            }
+
+            #rachel-image {
+                background-image: url("../../images/rachel.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .takeAction {
+                background-image: url("../../images/takeAction.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            .support {
+                background-image: url("../../images/support.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .welcome-left {
+                min-height: 400px;
+                width: 50%;
+                float: left;
+
+                @media only screen and (max-width: 800px) {
+                    width: 100%;
+                }
+            }
+
+            .welcome-right {
+                width: 50%;
+                float: right;
+                min-height: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 50px 50px 70px 50px;
+                align-content: center;
+
+                @media only screen and (max-width: 800px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

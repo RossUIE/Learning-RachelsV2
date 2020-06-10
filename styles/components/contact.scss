@@ -2,6 +2,7 @@
     width: 100%;
     background-color: $brand;
     padding: rem(70 0);
+    color: $white;
     &-content {
         display: flex;
         justify-content: space-between;
@@ -17,10 +18,11 @@
             margin: rem(20);
             flex-grow: 1;
             flex-basis: 200px;
+            word-break: break-word;
 
             img {
-                width: rem(50);
-                height: rem(50);
+                width: rem(90);
+                height: rem(90);
             }
 
             &_info {
@@ -49,7 +51,7 @@
         }
     }
     .c-map-content {
-        padding: 0 18px;
+        padding: 0;
         overflow-y: hidden;
         background-color: #f1f1f1;
         transition: all .5s ease-in-out;
