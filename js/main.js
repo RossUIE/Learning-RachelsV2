@@ -31,6 +31,21 @@ const navSlide = () => {
 			}   
 		})
 	})
+	for (const link of navLinks) {
+		link.addEventListener('click', function(event) {
+			nav.classList.remove('nav-active')
+			backdrop.classList.remove('backdrop-active');
+			navLinks.forEach((link, index)=> {
+				if(link.style.animation) {
+					link.style.animation = ''
+				} else {
+					link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0}s`
+				}   
+			})
+			burger.classList.toggle('toggle')
+		  })
+	}
+	
 };
 
 var TopscrollTo = function () {
