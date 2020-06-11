@@ -25,14 +25,23 @@
 
                 &.nameFormfield {
                     border-radius: rem(8 0 0 0 );
+                    @media only screen and (max-width: 643px) {
+                        border-radius: rem(8 8 0 0 );
+                    }
                 }
 
                 &.messageFormfield {
                     border-radius: rem(0 8 8 0 );
+                    @media only screen and (max-width: 643px) {
+                        border-radius: rem(0 0 8 8 );
+                    }
                 }
 
                 &.phoneFormfield {
                     border-radius: rem(0 0 0 8 );
+                    @media only screen and (max-width: 643px) {
+                        border-radius: rem(0 0 0 0);
+                    }
                 }
 
             }
