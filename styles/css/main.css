@@ -347,6 +347,10 @@ textarea {
     display: flex;
     margin: auto;
     flex-wrap: wrap; }
+    .room-body a {
+      display: flex;
+      flex-grow: 1;
+      flex-basis: 300px; }
     .room-body .item {
       margin: 0.3125rem;
       display: flex;
@@ -766,10 +770,19 @@ ul {
         border: 1px solid #E2E6E7; }
         .c-contact-form .contact-form_content .form-field.nameFormfield {
           border-radius: 0.5rem 0 0 0; }
+          @media only screen and (max-width: 643px) {
+            .c-contact-form .contact-form_content .form-field.nameFormfield {
+              border-radius: 0.5rem 0.5rem 0 0; } }
         .c-contact-form .contact-form_content .form-field.messageFormfield {
           border-radius: 0 0.5rem 0.5rem 0; }
+          @media only screen and (max-width: 643px) {
+            .c-contact-form .contact-form_content .form-field.messageFormfield {
+              border-radius: 0 0 0.5rem 0.5rem; } }
         .c-contact-form .contact-form_content .form-field.phoneFormfield {
           border-radius: 0 0 0 0.5rem; }
+          @media only screen and (max-width: 643px) {
+            .c-contact-form .contact-form_content .form-field.phoneFormfield {
+              border-radius: 0 0 0 0; } }
       .c-contact-form .contact-form_content .c-personal {
         width: 50%;
         flex-grow: 1;
