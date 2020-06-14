@@ -19,7 +19,6 @@ html, body {
     font-family: Sassoon, Helvetica, sans-serif;
     color: $bodyText;
     scroll-behavior: smooth;
-    line-height: 1.6;
 }
 
 .back-to-top {
@@ -81,7 +80,7 @@ a {
 
 p,h1,h2,h3,h4,h5 {
     margin: 0;
-    line-height: initial;
+    line-height: 150%;
 }
 
 button {
