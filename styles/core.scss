@@ -19,11 +19,7 @@ html, body {
     font-family: Sassoon, Helvetica, sans-serif;
     color: $bodyText;
     scroll-behavior: smooth;
-    line-height: 1.4rem;
-
-    @media only screen and (max-width:480px){
-        line-height: 1.2rem;
-    }
+    line-height: 1.6;
 }
 
 .back-to-top {
@@ -85,11 +81,13 @@ a {
 
 p,h1,h2,h3,h4,h5 {
     margin: 0;
+    line-height: initial;
 }
 
 button {
     cursor: pointer;
     font: inherit;
+    vertical-align: middle;
 }
 
 .btn {

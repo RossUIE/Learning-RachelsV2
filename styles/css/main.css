@@ -17,10 +17,7 @@ html, body {
   font-family: Sassoon, Helvetica, sans-serif;
   color: #707070;
   scroll-behavior: smooth;
-  line-height: 1.4rem; }
-  @media only screen and (max-width: 480px) {
-    html, body {
-      line-height: 1.2rem; } }
+  line-height: 1.6; }
 
 .back-to-top {
   position: fixed;
@@ -69,11 +66,13 @@ a {
   text-decoration: none; }
 
 p, h1, h2, h3, h4, h5 {
-  margin: 0; }
+  margin: 0;
+  line-height: initial; }
 
 button {
   cursor: pointer;
-  font: inherit; }
+  font: inherit;
+  vertical-align: middle; }
 
 .btn {
   background: transparent;
@@ -277,8 +276,7 @@ textarea {
     max-width: 43.75rem; }
     .c-banner-title h1 {
       margin: 1.25rem 0;
-      font-size: 60px;
-      line-height: 1.2; }
+      font-size: 60px; }
   .c-banner .scroll-down {
     position: absolute;
     bottom: 1.25rem;
