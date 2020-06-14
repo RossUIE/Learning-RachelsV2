@@ -50,7 +50,7 @@
             cursor: pointer;
         }
         @media only screen and (max-width: 659px) {
-            
+            color: $bodyText;
             font-weight: bold;
             &:hover {
                 color: $white;

@@ -9,6 +9,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-size: 18px;
+  line-height: 1.4;
   height: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -162,6 +163,7 @@ textarea {
     cursor: pointer; }
   @media only screen and (max-width: 659px) {
     .c-header .nav-link {
+      color: #707070;
       font-weight: bold; }
       .c-header .nav-link:hover {
         color: #fff;
