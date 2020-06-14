@@ -57,6 +57,10 @@
         width: 100%;
         text-align: center;
         min-height: 120px;
+
+        h2 {
+            color: $bodyHeaders
+        }
     }
     &-body {
         max-width: 1400px;

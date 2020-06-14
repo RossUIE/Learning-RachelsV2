@@ -3,6 +3,10 @@
     &_title {
         text-align: center;
         margin-bottom: rem(50);
+
+        h2 {
+            color: $bodyHeaders;
+        }
     }
 
     .contact-form {

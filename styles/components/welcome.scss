@@ -12,7 +12,10 @@
     &-title {
         margin-bottom: rem(50);
         padding: rem(0 20 20 20);
-
+        
+        h2 {
+            color: $bodyHeaders;
+        }
         @media only screen and (max-width: 800px) {
            text-align: justify;
 
@@ -30,7 +33,6 @@
         margin: auto;
         word-wrap: break-word;
         padding-bottom: 100px;
-        color: #888899;
 
         h3 {
             margin-bottom: rem(10);

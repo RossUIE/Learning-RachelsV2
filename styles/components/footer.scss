@@ -21,6 +21,9 @@ footer {
         &-logo {
             text-align: center;
             flex-grow: 1;
+            h3 {
+                color: $white
+              }
         }
         &_links {
             display: flex;
