@@ -31,7 +31,7 @@ html, body {
   height: 50px;
   text-align: center;
   transition: background-color .3s, opacity .5s, visibility .5s;
-  z-index: 1000;
+  z-index: 1;
   opacity: 0;
   visibility: hidden;
   cursor: pointer; }
@@ -86,7 +86,7 @@ button {
 
 .c-backdrop {
   position: fixed;
-  top: 77px;
+  top: 76px;
   left: 0;
   height: 100vh;
   width: 100%;
@@ -164,8 +164,7 @@ textarea {
     cursor: pointer; }
   @media only screen and (max-width: 659px) {
     .c-header .nav-link {
-      color: #707070;
-      font-weight: bold; }
+      color: #707070; }
       .c-header .nav-link:hover {
         color: #fff;
         cursor: pointer; } }
@@ -192,8 +191,8 @@ textarea {
       .c-header_links {
         position: absolute;
         right: 0;
-        height: calc(100vh - 69px);
-        top: 4.3125rem;
+        height: calc(100vh - 76px);
+        top: 4.75rem;
         background: #DF8B0D;
         width: 57%;
         transform: translateX(100%);
@@ -201,7 +200,8 @@ textarea {
         flex-direction: column;
         justify-content: space-between;
         padding: 1.25rem;
-        z-index: 101; }
+        z-index: 101;
+        overflow-y: scroll; }
         .c-header_links ul {
           flex-direction: column;
           align-items: center;
@@ -275,7 +275,13 @@ textarea {
     max-width: 43.75rem; }
     .c-banner-title h1 {
       margin: 1.25rem 0;
-      font-size: 60px; }
+      font-size: 55px; }
+      @media only screen and (max-width: 500px) {
+        .c-banner-title h1 {
+          font-size: 210%; } }
+    @media only screen and (max-width: 500px) {
+      .c-banner-title h2 {
+        font-size: 100%; } }
   .c-banner .scroll-down {
     position: absolute;
     bottom: 1.25rem;
@@ -662,7 +668,7 @@ ul {
   font-weight: 600; }
 
 .pricing-features {
-  color: #888899;
+  color: #707070;
   margin: 0px 0 25px; }
 
 .pricing-plan p {
@@ -966,13 +972,11 @@ footer {
   padding-bottom: 20px; }
 
 .snip h4 {
-  font-weight: 400;
   margin: 0;
   opacity: 0.5; }
 
 .snip blockquote {
   font-style: italic;
-  font-weight: 300;
   margin: 0 0 20px; }
 
 /*End of reviews*/

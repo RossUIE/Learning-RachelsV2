@@ -107,15 +107,15 @@ ul {
 }
 
 .pricing-features {
-    color: #888899;
+    color: $bodyText;
     margin: 0px 0 25px;
 }
       
 .pricing-plan p {
-  text-align: left;
-  margin-top: 50px;
-  text-transform: none;
-   font-weight: 600;
+    text-align: left;
+    margin-top: 50px;
+    text-transform: none;
+    font-weight: 600;
 }
 
 .pricing-features-item {
