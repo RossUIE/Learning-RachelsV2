@@ -2,10 +2,10 @@
     box-sizing: border-box;
 }
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-@font-face {
-    font-family: Sassoon;
-    src: url('../../font/Sassoon Primary Regular/Sassoon-Williams - SassoonPrimaryRg.ttf');
-}
+// @font-face {
+//     font-family: Sassoon;
+//     src: url('../../font/Sassoon Primary Regular/Sassoon-Williams - SassoonPrimaryRg.ttf');
+// }
 
 html, body {
     margin: 0;
@@ -78,7 +78,7 @@ a {
     text-decoration: none;
 }
 
-p,h1,h2,h3,h4,h5 {
+p,h1,h2,h3,h4,h5, li {
     margin: 0;
     line-height: 150%;
 }
