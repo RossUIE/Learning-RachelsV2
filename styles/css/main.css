@@ -137,11 +137,22 @@ textarea {
   z-index: 2;
   color: #fff;
   transition: all 0.3s ease; }
+  .c-header a {
+    color: #fff; }
+  .c-header_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .c-header_logo img {
+      width: 40px;
+      margin-right: 0.625rem; }
   .c-header.scrolled {
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.0980392157);
     background: #fff;
     transition: all 0.3s ease;
     color: #707070; }
+    .c-header.scrolled a {
+      color: #707070; }
     .c-header.scrolled li {
       color: #707070; }
     .c-header.scrolled svg {
@@ -151,16 +162,17 @@ textarea {
     cursor: pointer; }
   @media only screen and (max-width: 659px) {
     .c-header .nav-link {
-      color: #707070;
       font-weight: bold; }
       .c-header .nav-link:hover {
         color: #fff;
         cursor: pointer; } }
   @media only screen and (max-width: 659px) {
     .c-header {
-      padding: 1.25rem 1.875rem;
+      padding: 1.25rem 1.25rem;
       background-color: #fff;
       color: #707070; }
+      .c-header a {
+        color: #707070; }
       .c-header svg {
         fill: #707070; } }
   .c-header_links {
@@ -264,7 +276,7 @@ textarea {
   .c-banner .scroll-down {
     position: absolute;
     bottom: 1.25rem;
-    left: 50%;
+    margin: auto;
     width: 24px;
     height: 24px;
     border-left: 1px solid #fff;
@@ -272,8 +284,7 @@ textarea {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-animation: sdb04 2s infinite;
-    animation: sdb04 2s infinite;
-    box-sizing: border-box; }
+    animation: sdb04 2s infinite; }
 @-webkit-keyframes sdb04 {
   0% {
     -webkit-transform: rotate(-45deg) translate(0, 0); }

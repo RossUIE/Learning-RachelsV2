@@ -9,6 +9,20 @@
     z-index: 2;
     color: $white; 
     transition: all 0.3s ease;
+
+    a {
+        color: $white;
+    }
+
+    &_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 40px;
+            margin-right: rem(10);
+        }
+    }
     
 
     &.scrolled {
@@ -16,6 +30,10 @@
         background: $white;
         transition: all 0.3s ease;
         color: $bodyText;
+
+        a {
+            color: $bodyText;
+        }
 
         li {
             color: $bodyText;
@@ -32,7 +50,7 @@
             cursor: pointer;
         }
         @media only screen and (max-width: 659px) {
-            color: $bodyText;
+            
             font-weight: bold;
             &:hover {
                 color: $white;
@@ -42,9 +60,13 @@
     }
 
     @media only screen and (max-width: 659px) {
-        padding: rem(20 30);
+        padding: rem(20 20);
         background-color: $white;
         color: $bodyText;
+
+        a {
+            color: $bodyText;
+        }
 
         svg {
             fill: $bodyText;
