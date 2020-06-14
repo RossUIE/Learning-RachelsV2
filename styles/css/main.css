@@ -4,12 +4,11 @@
 
 @font-face {
   font-family: Sassoon;
-  src: url("../../font/Sassoon Primary Regular/Sassoon-Williams - SassoonPrimaryRg.ttf"); }
+  src: url("../../font/Sassoon Primary Regular/SassoonSansStd.otf"); }
 html, body {
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: 17px;
   height: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -909,7 +908,7 @@ footer {
   justify-content: center;
   padding: 1.25rem; }
 
-.testimonial h1 {
+.testimonial h2 {
   margin-top: 50px; }
 
 .snip {
