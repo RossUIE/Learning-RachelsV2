@@ -16,7 +16,8 @@ html, body {
   background: #fff;
   font-family: Sassoon, Helvetica, sans-serif;
   color: #707070;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  line-height: 1.6; }
 
 .back-to-top {
   position: fixed;
@@ -76,7 +77,8 @@ button {
   color: #fff;
   border: 2px solid #fff;
   border-radius: 3.125rem;
-  padding: 0.625rem 1.875rem; }
+  padding: 0.625rem 1.875rem;
+  line-height: 30px; }
   .btn:hover {
     background: #DF8B0D;
     border-color: #DF8B0D;
