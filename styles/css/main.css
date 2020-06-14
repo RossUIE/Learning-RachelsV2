@@ -2,9 +2,6 @@
 * {
   box-sizing: border-box; }
 
-@font-face {
-  font-family: Sassoon;
-  src: url("../../font/Sassoon Primary Regular/Sassoon-Williams - SassoonPrimaryRg.ttf"); }
 html, body {
   margin: 0;
   padding: 0;
@@ -64,7 +61,7 @@ a {
   color: #707070;
   text-decoration: none; }
 
-p, h1, h2, h3, h4, h5 {
+p, h1, h2, h3, h4, h5, li {
   margin: 0;
   line-height: 150%; }
 
