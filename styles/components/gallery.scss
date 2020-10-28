@@ -103,6 +103,12 @@
 
 .c-gallery {
     width: 100%;
+
+    .c-banner-title {
+        h3 {
+            color: $white;
+        }
+    }
     &-banner {
         display: flex;
         justify-content: center;
@@ -164,18 +170,13 @@
                 z-index: 0;
             }
    
-
             img {
                 width: auto;
                 height: 100%;
                 flex: 1;
                 position: relative;
                 cursor: pointer;
-
-                
-            }
-
-            
+            } 
         }
         @keyframes loader {
             0% {
@@ -184,6 +185,6 @@
             100% {
               transform: translate(-50%,-50%) rotate(360deg);
             }
-          }
+        }
     }
 }

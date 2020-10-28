@@ -131,13 +131,16 @@ ul {
 }
 
 .pricing-price {
-    color: #DF8B0D;
     display: block;
     font-weight: 700;
     position: absolute;
     bottom: rem(20);
     left: 0;
     right: 0;
+
+    h3 {
+        color: #DF8B0D;
+    }
 }
 
 .background {

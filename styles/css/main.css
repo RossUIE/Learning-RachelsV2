@@ -160,19 +160,23 @@ textarea {
       color: #707070; }
     .c-header.scrolled li {
       color: #707070; }
+      @media only screen and (max-width: 659px) {
+        .c-header.scrolled li {
+          color: #fff; } }
     .c-header.scrolled svg {
       fill: #707070; }
+      @media only screen and (max-width: 659px) {
+        .c-header.scrolled svg {
+          color: #fff; } }
     .c-header.scrolled h1 {
       color: #707070; }
   .c-header .nav-link:hover {
     color: #DF8B0D;
     cursor: pointer; }
   @media only screen and (max-width: 659px) {
-    .c-header .nav-link {
-      color: #707070; }
-      .c-header .nav-link:hover {
-        color: #fff;
-        cursor: pointer; } }
+    .c-header .nav-link:hover {
+      color: #fff;
+      cursor: pointer; } }
   @media only screen and (max-width: 659px) {
     .c-header {
       padding: 1.25rem 1.25rem;
@@ -210,7 +214,8 @@ textarea {
         .c-header_links ul {
           flex-direction: column;
           align-items: center;
-          padding: 0; }
+          padding: 0;
+          color: #fff; }
           .c-header_links ul li {
             color: #fff;
             padding: 1.25rem;
@@ -398,6 +403,8 @@ textarea {
 
 .c-gallery {
   width: 100%; }
+  .c-gallery .c-banner-title h3 {
+    color: #fff; }
   .c-gallery-banner {
     display: flex;
     justify-content: center;
@@ -695,13 +702,14 @@ ul {
   border-bottom: 1px solid #e1f1ff; }
 
 .pricing-price {
-  color: #DF8B0D;
   display: block;
   font-weight: 700;
   position: absolute;
   bottom: 1.25rem;
   left: 0;
   right: 0; }
+  .pricing-price h3 {
+    color: #DF8B0D; }
 
 .background {
   position: relative;

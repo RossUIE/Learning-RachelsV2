@@ -37,10 +37,16 @@
 
         li {
             color: $bodyHeaders;
+            @media only screen and (max-width: 659px) {
+                color: $white;
+            }
         }
 
         svg {
             fill: $bodyHeaders;
+            @media only screen and (max-width: 659px) {
+                color: $white;
+            }
         }
 
         h1 {
@@ -54,7 +60,6 @@
             cursor: pointer;
         }
         @media only screen and (max-width: 659px) {
-            color: $bodyHeaders;
           
             &:hover {
                 color: $white;
@@ -110,6 +115,7 @@
                 flex-direction: column;
                 align-items: center;
                 padding: 0;
+                color: $white;
 
                 li {
                     color: $white;
